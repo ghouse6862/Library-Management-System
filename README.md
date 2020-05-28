@@ -5,7 +5,7 @@ This is a database host application where users can Search, Issue, and Check-in 
 
 
 DATABASE DETAILS:
-The SQL database used here is MySQL.
+The SQL database used here is MySQL. 
 The database consists of the following tables:
 1. Librarians: It consists of two columns “Empid” and “Password”, both the columns has a unique constraint on them.
 Column “Empid” is of type integer, whereas “Password” is of type varchar.
