@@ -4,8 +4,7 @@ This project was done as part of my CS6360 Database Design course
 This is a database host application where users can Search, Issue, and Check-in books. The user can also add details of new borrowers.
 
 
-DATABASE DETAILS:
-The SQL database used here is MySQL. 
+DATABASE DETAILS:                                                                                                             The SQL database used here is MySQL. 
 The database consists of the following tables:
 1. Librarians: It consists of two columns “Empid” and “Password”, both the columns has a unique constraint on them.
 Column “Empid” is of type integer, whereas “Password” is of type varchar.
