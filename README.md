@@ -7,19 +7,19 @@ This is a database host application where users can Search, Issue, and Check-in 
 DATABASE DETAILS:
 The SQL database used here is MySQL.
 The database consists of the following tables:
-1.​Librarians: It consists of two columns “Empid” and “Password”, both the columns has a unique constraint on them.
+1. Librarians: It consists of two columns “Empid” and “Password”, both the columns has a unique constraint on them.
 Column “Empid” is of type integer, whereas “Password” is of type varchar.
-2.​Authors: It consists of two columns “Author_id” and “Name” , here “Author_id” is the primary key.
+2. Authors: It consists of two columns “Author_id” and “Name” , here “Author_id” is the primary key.
 Column “Author_id” is of type integer and “Name” is of type varchar.
-3. ​Book:​ It consists of two columns “Isbn” and “Title”, here Isbn is the primary key. “Isbn” is of type bigint and “Title” is of type varchar.
-4.​Book_Authors: It consists of two columns “Author_id” and “Isbn”, here both columns combined form a primary key.
+3. Book: It consists of two columns “Isbn” and “Title”, here Isbn is the primary key. “Isbn” is of type bigint and “Title” is of type varchar.
+4. Book_Authors: It consists of two columns “Author_id” and “Isbn”, here both columns combined form a primary key.
 “Author_id” is of type integer and “Isbn” is of type bigint
 “Author_id” has a foreign key constraint and it refers to “Author_id” of Authors.
 “Isbn” has a foreign key constraint and it refers to “Isbn” of Book table.
-5.​Book_Loans: It consists of six columns, “Loan_id”, “Isbn”, “Card_id”, “Date_out”, “Due_date”, “Date_in”, here “Loan_id” column is the primary key.
+5. Book_Loans: It consists of six columns, “Loan_id”, “Isbn”, “Card_id”, “Date_out”, “Due_date”, “Date_in”, here “Loan_id” column is the primary key.
 “Isbn” and “Card_id” have foreign key constraints and they refer to “Isbn” of Book and “Card_id” of Borrower respectively.
-6.​Borrower: It consists of six columns, “Card_id”, “Ssn”, “Bname”, “Address”, “Phone”, here “Card_id” column is the primary key and “Ssn” column has a unique constraint on it.
-7.​Fines: It consists of 3 columns “Loan_id”, “Fine_amt”, “Paid”, here “Loan_id” is the primary key.
+6. Borrower: It consists of six columns, “Card_id”, “Ssn”, “Bname”, “Address”, “Phone”, here “Card_id” column is the primary key and “Ssn” column has a unique constraint on it.
+7. Fines: It consists of 3 columns “Loan_id”, “Fine_amt”, “Paid”, here “Loan_id” is the primary key.
 “Loan_id” also has a foreign key constraint and it refers to “Loan_id” of Book_Loans.
 
 
