@@ -4,7 +4,8 @@ This project was done as part of my CS6360 Database Design course
 This is a database host application where users can Search, Issue, and Check-in books. The user can also add details of new borrowers.
 
 
-DATABASE DETAILS:                                                                                                             The SQL database used here is MySQL. 
+## DATABASE DETAILS: 
+The SQL database used here is MySQL. 
 The database consists of the following tables:
 1. Librarians: It consists of two columns “Empid” and “Password”, both the columns has a unique constraint on them.
 Column “Empid” is of type integer, whereas “Password” is of type varchar.
@@ -22,7 +23,7 @@ Column “Author_id” is of type integer and “Name” is of type varchar.
 “Loan_id” also has a foreign key constraint and it refers to “Loan_id” of Book_Loans.
 
 
-GUI DETAILS:
+## GUI DETAILS:
 The GUI is implemented using Python programming language. Here, Tkinter which is the standard GUI library for Python is used and we query the database using pymysql.
        
 At first, the user is prompted to either register or login. After this, the user can perform the following things:
@@ -32,7 +33,7 @@ At first, the user is prompted to either register or login. After this, the user
 4. The user can check-in a book by searching for a book and then clicking the check-in button, before the book check-in the user will be asked to confirm whether the borrower has cleared the fine amount or not related to the book.
 
 
-Dependencies:
+## Dependencies:
 1. You need to install Python 3 and MySQL.
 
 2. The tkinter, pymysql, numpy and pandas libraries of python needs to be installed. This can be done by running following commands from command line:
@@ -42,7 +43,7 @@ pip install pymysql (or) pip3 install pymysql
 pip install numpy (or) pip3 install numpy
 pip install pandas (or) pip3 install pandas
 
-Set-up:
+## Set-up:
 1. Then you should run pre_processing.py file to process the CSV files and make them suitable to be mapped to tables.
 Make sure that before running this, you change the file paths at lines 11,31,37,42
 
